@@ -1,0 +1,204 @@
+[{
+  "_id": {
+    "$oid": "6a7af96f95fcc72288c53566"
+  },
+  "title": "My First Note",
+  "description": "This is my first note",
+  "tag": "General",
+  "date": {
+    "$date": "2026-08-11T10:29:03.836Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7af9ab95fcc72288c53567"
+  },
+  "title": "React Learning",
+  "description": "Learn React hooks and components",
+  "tag": "React",
+  "date": {
+    "$date": "2026-08-11T10:30:03.891Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7d8e13f50cf76ea443a59f"
+  },
+  "user": {
+    "$oid": "6a7c39fff5f5d6f1a2768940"
+  },
+  "title": "React Authentication",
+  "description": "Implement login and signup using JWT authentication. Store the authentication token securely and use protected routes to prevent unauthorized users from accessing private pages.",
+  "tag": "React",
+  "date": {
+    "$date": "2026-08-13T09:27:47.680Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7d8e42f50cf76ea443a5a0"
+  },
+  "user": {
+    "$oid": "6a7c39fff5f5d6f1a2768940"
+  },
+  "title": "Things to Improve",
+  "description": "Improve the application by adding search and filtering, better error messages, loading states, confirmation dialogs, responsive layouts, and a professional empty-notes state.",
+  "tag": "Improvements",
+  "date": {
+    "$date": "2026-08-13T09:28:34.865Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7d8e8df50cf76ea443a5a1"
+  },
+  "user": {
+    "$oid": "6a7c39fff5f5d6f1a2768940"
+  },
+  "title": "Node.js",
+  "description": "Node.js allows JavaScript to run on the server. It is useful for building APIs, backend services, and real-time applications.",
+  "tag": "Node.js",
+  "date": {
+    "$date": "2026-08-13T09:29:49.439Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7d8ec4f50cf76ea443a5a2"
+  },
+  "user": {
+    "$oid": "6a7c39fff5f5d6f1a2768940"
+  },
+  "title": "Express.js",
+  "description": "Express.js is a lightweight Node.js framework used to create REST APIs, routes, middleware, and backend applications.",
+  "tag": "Backend",
+  "date": {
+    "$date": "2026-08-13T09:30:44.743Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7d8f50f50cf76ea443a5a5"
+  },
+  "user": {
+    "$oid": "6a7c39fff5f5d6f1a2768940"
+  },
+  "title": "Time Complexity",
+  "description": "Time complexity describes how an algorithm's running time grows as the input size increases. Common complexities include O(1), O(log n), O(n), and O(n²).",
+  "tag": "DSA",
+  "date": {
+    "$date": "2026-08-13T09:33:04.121Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7d8f73f50cf76ea443a5a6"
+  },
+  "user": {
+    "$oid": "6a7c39fff5f5d6f1a2768940"
+  },
+  "title": "Space Complexity",
+  "description": "Space complexity measures the additional memory required by an algorithm as the input size increases.",
+  "tag": "DSA",
+  "date": {
+    "$date": "2026-08-13T09:33:39.349Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7d8f9af50cf76ea443a5a7"
+  },
+  "user": {
+    "$oid": "6a7c39fff5f5d6f1a2768940"
+  },
+  "title": "Stack",
+  "description": "A stack follows the LIFO principle: Last In, First Out. Common operations include push, pop, and top.",
+  "tag": "Data Structures",
+  "date": {
+    "$date": "2026-08-13T09:34:18.189Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7d8fbcf50cf76ea443a5a8"
+  },
+  "user": {
+    "$oid": "6a7c39fff5f5d6f1a2768940"
+  },
+  "title": "Queue",
+  "description": "A queue follows the FIFO principle: First In, First Out. Elements are inserted from the rear and removed from the front.",
+  "tag": "Data Structures",
+  "date": {
+    "$date": "2026-08-13T09:34:52.912Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7d8ffcf50cf76ea443a5a9"
+  },
+  "user": {
+    "$oid": "6a7c39fff5f5d6f1a2768940"
+  },
+  "title": "iNotebook Features",
+  "description": "Users can create, view, edit, and delete their personal notes. Authentication protects notes so users can access their own data securely.",
+  "tag": "Project",
+  "date": {
+    "$date": "2026-08-13T09:35:56.965Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7d901ff50cf76ea443a5aa"
+  },
+  "user": {
+    "$oid": "6a7c39fff5f5d6f1a2768940"
+  },
+  "title": "Frontend Improvements",
+  "description": "Add responsive layouts, smooth animations, loading states, error messages, confirmation dialogs, and consistent component styling.",
+  "tag": "UI/UX",
+  "date": {
+    "$date": "2026-08-13T09:36:31.025Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7d904ef50cf76ea443a5ab"
+  },
+  "user": {
+    "$oid": "6a7c39fff5f5d6f1a2768940"
+  },
+  "title": "Backend Improvements",
+  "description": "Improve API validation, authentication middleware, error handling, database queries, and API response consistency.",
+  "tag": "Backend",
+  "date": {
+    "$date": "2026-08-13T09:37:18.458Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7d9080f50cf76ea443a5ac"
+  },
+  "user": {
+    "$oid": "6a7c39fff5f5d6f1a2768940"
+  },
+  "title": "Testing Checklist",
+  "description": "test signup, login, logout, adding notes, editing notes, deleting notes, protected routes, invalid credentials, and unauthorized API requests.",
+  "tag": "Testing",
+  "date": {
+    "$date": "2026-08-13T09:38:08.304Z"
+  },
+  "__v": 0
+}]

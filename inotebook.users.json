@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "6a7c39fff5f5d6f1a2768940"
+  },
+  "username": "Areeba",
+  "email": "test@gmail.com",
+  "password": "$2b$10$whMAk2uCTyNahOLpBjWSjuNiSuVX9QzquKPn4uu8VfTkPQj97g/m2",
+  "date": {
+    "$date": "2026-08-12T09:16:47.865Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a7c4a30c2acef84554f00e3"
+  },
+  "username": "admin",
+  "email": "areebashahzadi2007@gmail.com",
+  "password": "$2b$10$CoDPqgnW6eDW0BIV5Bb/9eYc/xpC9m/UjKSV3h3r9GtTfhsiJrziG",
+  "date": {
+    "$date": "2026-08-12T10:25:52.239Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,567 @@
+/* =========================
+   NOTE CARD
+========================= */
+
+.note-card {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    height: 100%;
+
+    min-height: 180px;
+    padding: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.045);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+    overflow: hidden;
+}
+
+.note-card > div:first-child {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+}
+
+
+/* Subtle top accent */
+
+.note-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: #2563eb;
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 0.35s ease;
+}
+
+
+.note-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #dbeafe;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+.note-card:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* =========================
+   NOTE CONTENT
+========================= */
+
+.note-title {
+    margin: 0 0 10px;
+
+    color: #111827;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    line-height: 1.35;
+    min-height: 1.35em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    word-break: break-word;
+}
+
+
+.note-description {
+    margin: 0 0 16px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    word-break: break-word;
+    flex: 1;
+    min-height: 3.5em;
+}
+
+
+/* =========================
+   TAG
+========================= */
+
+.note-tag {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: auto;
+
+    padding: 5px 10px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.note-actions {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 7px;
+
+    flex-shrink: 0;
+}
+
+
+.note-action-btn {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.note-action-btn:hover {
+    transform: translateY(-2px);
+
+    background: #f8fafc;
+
+    border-color: #cbd5e1;
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+.note-action-btn:active {
+    transform: scale(0.94);
+}
+
+
+/* =========================
+   EDIT MODAL OVERLAY
+========================= */
+
+.edit-modal-overlay {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: 2000;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(15, 23, 42, 0.45);
+
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+
+    animation: modalOverlayIn 0.25s ease;
+}
+
+
+/* =========================
+   EDIT MODAL
+========================= */
+
+.edit-modal {
+    width: 100%;
+    max-width: 520px;
+
+    max-height: calc(100vh - 40px);
+
+    overflow-y: auto;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.18);
+
+    animation: modalIn 0.3s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+/* =========================
+   MODAL HEADER
+========================= */
+
+.edit-modal-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+}
+
+
+.edit-modal-header h3 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.modal-close {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #f3f4f6;
+
+    color: #4b5563;
+
+    font-size: 22px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.modal-close:hover {
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    transform: rotate(90deg);
+}
+
+
+/* =========================
+   MODAL FORM
+========================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #374151;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+
+.form-group textarea {
+    resize: vertical;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MODAL BUTTONS
+========================= */
+
+.modal-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+.cancel-btn,
+.save-btn {
+    padding: 10px 17px;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.cancel-btn {
+    border: 1px solid #d1d5db;
+
+    background: #ffffff;
+
+    color: #374151;
+}
+
+
+.cancel-btn:hover {
+    background: #f9fafb;
+
+    transform: translateY(-1px);
+}
+
+
+.save-btn {
+    border: 1px solid #2563eb;
+
+    background: #2563eb;
+
+    color: #ffffff;
+}
+
+
+.save-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 16px rgba(37, 99, 235, 0.22);
+}
+
+
+.save-btn:active,
+.cancel-btn:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+.animate-fade-up {
+    animation: noteFadeUp 0.5s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+.animate-scale {
+    animation: modalIn 0.3s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+@keyframes noteFadeUp {
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+@keyframes modalOverlayIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(15px)
+            scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .note-card {
+        padding: 18px;
+        
+        min-height: 0;
+
+        flex-direction: column;
+    }
+
+    .note-actions {
+        align-self: flex-end;
+    }
+
+    .edit-modal {
+        padding: 22px;
+
+        border-radius: 15px;
+    }
+
+    .edit-modal-header h3 {
+        font-size: 20px;
+    }
+
+    .modal-actions {
+        flex-direction: column-reverse;
+    }
+
+    .cancel-btn,
+    .save-btn {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .note-card,
+    .note-action-btn,
+    .edit-modal,
+    .edit-modal-overlay {
+        animation: none;
+        transition: none;
+    }
+
+}

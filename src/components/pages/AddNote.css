@@ -1,0 +1,87 @@
+.add-note {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+
+    background: #ffffff;
+    border-radius: 18px;
+
+    border: 1px solid #e9ecef;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.add-note h2 {
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0d6efd;
+
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+
+    transform: translateY(-1px);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.add-note-btn {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #0d6efd;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.add-note-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(13, 110, 253, 0.25);
+}
+
+.add-note-btn:active {
+    transform: scale(0.98);
+}

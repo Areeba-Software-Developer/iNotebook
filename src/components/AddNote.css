@@ -1,0 +1,165 @@
+/* ========================================
+   ADD NOTE CARD
+======================================== */
+
+.add-note-card {
+    width: 100%;
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    animation: addNoteIn 0.55s cubic-bezier(.22, 1, .36, 1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.add-note-card:hover {
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+.add-note-header h2 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.add-note-header p {
+    margin: 0 0 28px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* ========================================
+   FORM GROUP
+======================================== */
+
+.add-note-group {
+    margin-bottom: 21px;
+}
+
+.add-note-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.add-note-group input,
+.add-note-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 11px;
+    outline: none;
+    background: #ffffff;
+    color: #111827;
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.add-note-group input::placeholder,
+.add-note-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+.add-note-group input:hover,
+.add-note-group textarea:hover {
+    border-color: #9ca3af;
+}
+
+.add-note-group input:focus,
+.add-note-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.10);
+    transform: translateY(-1px);
+}
+
+.add-note-group textarea {
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+/* ========================================
+   ADD NOTE BUTTON
+======================================== */
+
+.add-note-button {
+    width: 100%;
+    margin-top: 4px;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 11px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 7px 18px rgba(37, 99, 235, 0.18);
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.add-note-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 11px 25px rgba(37, 99, 235, 0.25);
+}
+
+.add-note-button:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.18);
+}
+
+/* ========================================
+   ANIMATION
+======================================== */
+
+@keyframes addNoteIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+    .add-note-card {
+        margin: 25px 15px;
+        padding: 25px 20px;
+        border-radius: 17px;
+    }
+
+    .add-note-header h2 {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    .add-note-group input,
+    .add-note-group textarea {
+        font-size: 14px;
+        padding: 12px 13px;
+    }
+
+    .add-note-button {
+        padding: 12px;
+    }
+}
